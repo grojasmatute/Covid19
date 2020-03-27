@@ -13,8 +13,8 @@ library(glmnet)
 
 ## Credentials ##
 
-Sys.setenv("plotly_username"="grojasmatute")
-Sys.setenv("plotly_api_key"="CCHhbi6CwBTyOiA3rbIc")
+Sys.setenv("xxxx")
+Sys.setenv("xxxx")
 
 
 fever_ES <- gtrends(c("fever"), time = "today 3-m", geo =c("ES"))
