@@ -100,7 +100,7 @@ chills_GB <- gtrends(c( "chills"), time = "today 3-m", geo =c("GB"))
 chills_VE <- gtrends(c( "chills"), time = "today 3-m", geo =c("VE"))
 chills_KR <- gtrends(c( "chills"), time = "today 3-m", geo =c("KR"))
 
-plot(chills_ES)
+## Simple Average ##
 Spain <- rowMeans(cbind(fever_ES$interest_over_time$hits, Cough_ES$interest_over_time$hits, Symptoms_ES$interest_over_time$hits, 
                         Breath_ES$interest_over_time$hits, Muscular_ES$interest_over_time$hits))
 Italy <- rowMeans(cbind(fever_IT$interest_over_time$hits, Cough_IT$interest_over_time$hits, Symptoms_IT$interest_over_time$hits,
@@ -155,8 +155,8 @@ Fig_covid19_2 <-subplot(USA, GB, KR)
 
 
 #credentials
-Sys.setenv("plotly_username"="grojasmatute")
-Sys.setenv("plotly_api_key"="CCHhbi6CwBTyOiA3rbIc")
+Sys.setenv("plotly_username"="xxx")
+Sys.setenv("plotly_api_key"="xxx")
 
 chart_link = api_create(Fig_covid19, filename="Covid19")
 chart_link = api_create(Fig_covid19_2, filename="Covid19_2")
